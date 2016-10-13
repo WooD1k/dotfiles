@@ -1,0 +1,37 @@
+alias ..='cd ..'
+alias ...='cd ~/'
+alias cdp='cd ~/projects'
+alias s='cd ~/swift'
+alias status='git status'
+alias push="git push"
+alias pull="git pull"
+alias add="git add "
+alias revert="git revert"
+alias commit='git commit'
+alias fetch='git fetch'
+alias branch='git branch'
+alias clone='git clone'
+alias stash='git stash'
+alias merge='git merge'
+alias checkout="git checkout"
+alias tisrv='ts server'
+alias tirun='ts run'
+alias tsrun='ts run'
+alias tsupd='ts @ run --update'
+alias tiupd="ts @ run --update"
+alias ticlr="ts clear"
+alias ticls="ts close"
+alias wget="curl -O"
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;
+killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;
+killall Finder /System/Library/CoreServices/Finder.app'
+
+GIT_AUTHOR_NAME="Alexey Chulochnikov"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="chulochnikov@gmail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+export JSCS_BIN="/usr/local/lib/node_modules/jscs/"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
